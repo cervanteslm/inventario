@@ -4,7 +4,7 @@ using System.Text;
 
 namespace inventario.COMMON.Entidades
 {
-    class ValeSalida:Base
+    public class ValeSalida:Base
     {
         public DateTime FechaEntrega { get; set; }
         public List<Material> Materiales { get; set; }

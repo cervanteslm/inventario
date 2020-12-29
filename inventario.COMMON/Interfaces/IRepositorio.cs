@@ -7,9 +7,9 @@ namespace inventario.COMMON.Interfaces
 {
     public interface IRepositorio<T> where T:Base
     {
-        bool Crear { get; }
-        bool Editar(string id, T EntidadModificada);
-        bool Eliminar(T entidad);
-        List<T> Leer { get;}
+        bool Create(T Entidad);
+        bool Update(T EntidadModificada);
+        bool Delete(string id);
+        List<T> read { get;}
     }
 }
